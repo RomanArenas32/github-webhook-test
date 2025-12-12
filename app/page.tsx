@@ -14,7 +14,7 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap gap-3 text-sm">
             <span className="rounded-full bg-emerald-100 px-3 py-1 font-medium text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200">
-              Cambio simple
+              OTRO Cambio simple
             </span>
             <span className="rounded-full bg-blue-100 px-3 py-1 font-medium text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">
               Confirmar webhook
