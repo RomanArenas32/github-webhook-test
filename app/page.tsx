@@ -1,37 +1,13 @@
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import HomeComponent from "./components/Home";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-zinc-50 font-sans text-zinc-900 dark:bg-black dark:text-zinc-50">
       <Navbar />
       <main className="flex-1 flex items-center justify-center px-6 py-16">
-        <div className="flex flex-col gap-4">
-          <p className="text-sm uppercase tracking-[0.3em] text-zinc-500 dark:text-zinc-400">
-            Webhook test
-          </p>
-          <h1 className="text-3xl font-semibold leading-tight">Probando el hook de GitHub</h1>
-          <p className="text-lg leading-8 text-zinc-700 dark:text-zinc-200">
-            Si ves este mensaje, el despliegue se actualizó correctamente. Aquí
-            vamos a confirmar que el webhook responde a los cambios en
-            <code className="mx-1 rounded bg-zinc-100 px-1.5 py-0.5 text-sm font-mono text-zinc-800 dark:bg-zinc-800 dark:text-zinc-100">app/page.tsx</code>.
-          </p>
-          <div className="flex flex-wrap gap-3 text-sm">
-            <span className="rounded-full bg-emerald-100 px-3 py-1 font-medium text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200">
-              OTRO Cambio simple
-            </span>
-            <span className="rounded-full bg-blue-100 px-3 py-1 font-medium text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">
-              Confirmar webhook
-            </span>
-            <span className="rounded-full bg-amber-100 px-3 py-1 font-medium text-amber-800 dark:bg-amber-900/40 dark:text-amber-100">
-              Branch: feature/home
-            </span>
-          </div>
-          <p className="text-base text-zinc-600 dark:text-zinc-300">
-            Edita este contenido, haz commit y push. Si todo va bien, la acción
-            configurada en GitHub debería ejecutarse y reflejar este cambio.
-          </p>
-        </div>
+        <HomeComponent />
       </main>
       <Footer />
     </div>
