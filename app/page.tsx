@@ -1,7 +1,11 @@
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 px-6 font-sans text-zinc-900 dark:bg-black dark:text-zinc-50">
-      <main className="w-full max-w-2xl rounded-2xl border border-zinc-200 bg-white/80 p-10 shadow-lg backdrop-blur dark:border-zinc-800 dark:bg-zinc-900/70">
+    <div className="flex flex-col min-h-screen bg-zinc-50 font-sans text-zinc-900 dark:bg-black dark:text-zinc-50">
+      <Navbar />
+      <main className="flex-1 flex items-center justify-center px-6 py-16">
         <div className="flex flex-col gap-4">
           <p className="text-sm uppercase tracking-[0.3em] text-zinc-500 dark:text-zinc-400">
             Webhook test
@@ -14,7 +18,7 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap gap-3 text-sm">
             <span className="rounded-full bg-emerald-100 px-3 py-1 font-medium text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200">
-              Cambio simple
+              OTRO Cambio simple
             </span>
             <span className="rounded-full bg-blue-100 px-3 py-1 font-medium text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">
               Confirmar webhook
@@ -29,6 +33,7 @@ export default function Home() {
           </p>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
