@@ -1,8 +1,10 @@
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-zinc-50 font-sans text-zinc-900 dark:bg-black dark:text-zinc-50">
+      <Navbar />
       <main className="flex-1 flex items-center justify-center px-6 py-16">
         <div className="flex flex-col gap-4">
           <p className="text-sm uppercase tracking-[0.3em] text-zinc-500 dark:text-zinc-400">
