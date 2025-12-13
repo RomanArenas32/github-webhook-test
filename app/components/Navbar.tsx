@@ -14,7 +14,7 @@ export default function Navbar() {
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">TF</span>
             </div>
-            <span className="font-semibold text-lg hidden sm:inline">TechFlow</span>
+            <span className="font-semibold text-lg hidden sm:inline">TechFlow!!!!</span>
           </div>
 
           {/* Links Desktop */}
